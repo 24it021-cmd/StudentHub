@@ -25,6 +25,6 @@ This project is developed as a Web Development Lab project.
 
 ## Author
 
-Student Name
+Niksha Garnara
 
-Enrollment Number
+24IT021
