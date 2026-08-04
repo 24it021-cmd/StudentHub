@@ -1,159 +1,162 @@
-<!-- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Register</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentHub | Register</title>
 
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
 <body>
 
-<h1>Student Registration</h1>
+<header>
+
+<h1>🎓 StudentHub </h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="attendance.html">Attendance</a>
+<a href="assignment.html">Assignments</a>
+<a href="timetable.html">Timetable</a>
+<a href="notice.html">Notices</a>
+<a href="profile.html">Profile</a>
+<a href="contact.html">Contact</a>
+
+<div class="buttons">
+<a href="register.html" class="btn">Get Started</a>
+<a href="login.html" class="btn login">Login</a>
+</div>
+
+</nav>
+
+</header>
+
+<section class="register-container">
+
+<h2>Create Your Student Account</h2>
+
+<p>
+Join StudentHub and manage your academic journey with ease.
+</p>
 
 <form>
 
-<input type="text" placeholder="Full Name"><br><br>
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name">
+</div>
 
-<input type="email" placeholder="Email"><br><br>
+<div class="form-group">
+<label>Student ID</label>
+<input type="text" placeholder="Enter Student ID">
+</div>
 
-<input type="password" placeholder="Password"><br><br>
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email">
+</div>
 
-<button>Register</button>
+<div class="form-group">
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter your mobile number">
+</div>
+
+<div class="form-group">
+<label>Date of Birth</label>
+<input type="date">
+</div>
+
+<div class="form-group">
+<label>Department</label>
+
+<select>
+
+<option>Select Department</option>
+
+<option>Computer Science</option>
+
+<option>Information Technology</option>
+
+<option>Artificial Intelligence </option>
+
+<option>Electronics</option>
+
+<option>Mechanical</option>
+
+<option>Civil</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Semester</label>
+
+<select>
+
+<option>Select Semester</option>
+
+<option>Semester 1</option>
+
+<option>Semester 2</option>
+
+<option>Semester 3</option>
+
+<option>Semester 4</option>
+
+<option>Semester 5</option>
+
+<option>Semester 6</option>
+
+<option>Semester 7</option>
+
+<option>Semester 8</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Password</label>
+<input type="password" placeholder="Create Password">
+</div>
+
+<div class="form-group">
+<label>Confirm Password</label>
+<input type="password" placeholder="Confirm Password">
+</div>
+
+
+<button type="submit">
+
+Create Account
+
+</button>
 
 </form>
 
-<a href="index.html">Home</a>
+<div class="login-link">
+
+Already have an account?
+
+<a href="login.html">Login Here</a>
+
+</div>
+
+</section>
+
+<footer>
+
+
+
+<p>Empowering students with smarter academic management.</p>
+
+<p>© 2026 StudentHub Portal | All Rights Reserved</p>
+
+</footer>
 
 </body>
-</html> -->
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHub - Registration</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    
-
-    <section class="register-container">
-
-        <h2>Create Your Student Account</h2>
-
-        <p>Join StudentHub and manage your academic journey with ease.</p>
-
-        <form>
-
-            <div class="form-group">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" placeholder="Enter your full name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="studentid">Student ID</label>
-                <input type="text" id="studentid" placeholder="Enter Student ID" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="mobile">Mobile Number</label>
-                <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
-            </div>
-
-            <div class="form-group">
-                <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" required>
-            </div>
-
-            
-
-            <div class="form-group">
-                <label for="department">Department</label>
-
-                <select id="department" required>
-                    <option value="">Select Department</option>
-                    <option>Computer Science</option>
-                    <option>Information Technology</option>
-                    <option>Artificial Intelligence</option>
-                    <option>Electronics</option>
-                    <option>Mechanical</option>
-                    <option>Civil</option>
-                </select>
-
-            </div>
-
-            <div class="form-group">
-                <label for="semester">Semester</label>
-
-                <select id="semester" required>
-                    <option value="">Select Semester</option>
-                    <option>Semester 1</option>
-                    <option>Semester 2</option>
-                    <option>Semester 3</option>
-                    <option>Semester 4</option>
-                    <option>Semester 5</option>
-                    <option>Semester 6</option>
-                    <option>Semester 7</option>
-                    <option>Semester 8</option>
-                </select>
-
-            </div>
-
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Create Password" required>
-            </div>
-
-            <div class="form-group">
-                <label for="confirm">Confirm Password</label>
-                <input type="password" id="confirm" placeholder="Confirm Password" required>
-            </div>
-
-            
-
-
-
-            </div>
-
-            <button type="submit">
-                Register
-            </button>
-
-            <p class="login-link">
-                Already have an account?
-                <a href="login.html">Login Here</a>
-            </p>
-
-        </form>
-
-    </section>
-
-    <footer>
-
-
-
-        <center><p><h3>Empowering students with smarter academic management.</h3></p></center>
-        
-        <center><p>
-            © 2026 StudentHub Portal | All Rights Reserved
-        </p></center>
-
-    </footer>
-
-</body>
-
 </html>
